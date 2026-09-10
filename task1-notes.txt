@@ -1,0 +1,116 @@
+LINUX TASK 1 - STUDY NOTES
+
+1. LINUX
+Linux is an open-source operating system and kernel used to manage hardware, software, files, processes and users.
+
+2. TERMINAL
+Terminal is a text-based interface used to interact with the operating system by typing commands.
+
+3. SHELL
+Shell is a command interpreter. It reads commands entered by the user and executes them.
+
+4. CONSOLE
+Console is a direct text interface to a computer system. A terminal emulator provides a console-like interface inside a graphical desktop.
+
+5. BASH VS ZSH
+Bash (Bourne Again SHell) is the default shell commonly used in Linux.
+Zsh (Z Shell) is another shell with additional features such as better customization and completion.
+
+6. ENVIRONMENT VARIABLES
+Environment variables are named values available to processes and programs.
+Examples:
+$HOME
+$USER
+$PATH
+$SHELL
+
+Commands:
+echo $SHELL
+echo $PATH
+env
+printenv
+
+7. PATH
+PATH is an environment variable containing directories where the shell searches for executable commands.
+
+Check PATH:
+echo $PATH
+
+Find a command:
+which bash
+which zsh
+
+8. .bashrc
+.bashrc is a configuration file used by Bash for interactive non-login shells.
+It can contain aliases, environment variables and prompt customization.
+
+Location:
+~/.bashrc
+
+Reload:
+source ~/.bashrc
+
+9. ALIASES
+Aliases are shortcuts for commands.
+
+Examples:
+alias ll='ls -la'
+alias c='clear'
+
+10. PS1
+PS1 controls the appearance of the Bash command prompt.
+
+A custom PS1 can display:
+Username
+Hostname
+Current directory
+Colors
+
+11. ~/bin
+~/bin is a personal directory for executable programs or scripts.
+
+Created using:
+mkdir -p ~/bin
+
+Added to PATH using:
+export PATH="$HOME/bin:$PATH"
+
+12. LS_COLORS
+LS_COLORS controls the colors displayed by the ls command.
+
+My configuration:
+Directories - Blue
+Images - Violet
+.txt files - White
+PDF files - Green
+DOCX files - Green
+
+13. COMMANDS PRACTICED
+
+echo
+env
+printenv
+which
+ls
+mkdir
+touch
+cd
+source
+alias
+pwd
+
+14. WSL + UBUNTU
+I am using Ubuntu through Windows Subsystem for Linux (WSL).
+WSL allows Linux tools and a Linux environment to run inside Windows without dual-booting.
+
+15. TASK 1 STATUS
+Linux environment configured.
+Bash explored.
+Environment variables explored.
+PATH configured.
+.bashrc customized.
+Aliases created.
+Colorful PS1 configured.
+~/bin added to PATH.
+File and directory colors configured.
+Study notes created.
