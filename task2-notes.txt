@@ -1,0 +1,38 @@
+LINUX TASK 2 – FILESYSTEM & NAVIGATION
+
+1. Filesystem Navigation
+Commands practiced:
+pwd
+cd
+ls
+tree
+
+2. Log Files
+Command used:
+sudo find / -type f -name "*.log" 2>/dev/null | head -20
+
+3. Five Largest Files
+Command used:
+sudo find / -xdev -type f -printf '%s %p\n' 2>/dev/null | sort -nr | head -5 | numfmt --field=1 --to=iec
+
+4. Linux Filesystem Hierarchy
+
+/ - Root
+/bin - Essential commands
+/boot - Boot files
+/dev - Device files
+/etc - Configuration files
+/home - User directories
+/lib - Libraries
+/media - Removable media
+/mnt - Mount points
+/opt - Optional software
+/proc - Process information
+/root - Root user's home
+/run - Runtime data
+/sbin - System administration commands
+/srv - Service data
+/sys - System information
+/tmp - Temporary files
+/usr - User applications
+/var - Variable data and logs
